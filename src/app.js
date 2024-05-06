@@ -17,7 +17,7 @@ app.use(cookieParser())
 //importing routes here
 import userRouter from "./routes/user.routes.js"
 
-//routes decLaration (here .use() is used because routers have now been defined separately and )
+//routes decLaration (here .use() is used because routers have now been defined separately and should be injected as middleware (sort of))
 app.use("/api/v1/users", userRouter)
 
 export { app }
